@@ -9,16 +9,16 @@ package ch07_loops;
 public class Loop03 {
     public static void main(String[] args) {
         // # 1 100번 돌리는 법
-//        int i = 1;
-//
-//        while (i < 101) {
-//            System.out.print(i + " ");
-//            if (i % 10 == 0) {
-//                System.out.println();
-//            }
-//
-//            i++;
-//        }
+        int i = 1;
+
+        while (i < 101) {
+            System.out.print(i + " ");
+            if (i % 10 == 0) {
+                System.out.println();
+            }
+
+            i++;
+        }
 
         // # 2 반복을 10번 돌리는 법
         int i2 = 1;
