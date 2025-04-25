@@ -3,6 +3,8 @@ package ch09_classes;
 public class Car {
     String color;
     int speed;
+    String eval;
+//    String eval2 = (speed > 100 ? "빠릅니다." : "그냥저냥입니다.");  // 생성자를 배우면 해결되는 개념
     public void drive() {
         System.out.println(color + "자동차가 주행 중입니다.\n최고 속도는 " + speed + "입니다.");
 
@@ -22,7 +24,7 @@ public class Car {
     }
     /*
         색상(빨강/노랑 etc), 속도(100, 200 etc) 필드를 정의하고
-        drive() / brake() / displatCarInfo() 메서드를 정의하시오.
+        drive() / brake() / displayCarInfo() 메서드를 정의하시오.
         1. drive() 결과값
             : 빨강 자동차가 주행 중입니다.
                 최고 속도는 100입니다.
@@ -40,4 +42,6 @@ public class Car {
         car2의 색깔 노랑 / 속도 200으로 생성한 후
         각각 drive()/brake()/displayCarInfo()를 실행하시고 콘솔창에 출력
      */
+
+
 }
