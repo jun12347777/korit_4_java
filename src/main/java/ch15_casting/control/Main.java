@@ -20,12 +20,36 @@ public class Main {
         // 다만 이상의 경우 구글홈미니를 만들어놨는데 거기에 default로
         // 컴퓨터, LED,  마우스가 한대씩 등록되어있다고 봐야하기 때문에 저희는
         // 9번 라인에 작성한 control1을 기준으로 수업합니다
+        SmartPhone smartPhone1 = new SmartPhone();
+        Speaker speaker1 = new Speaker();
+        Tv tv1 = new Tv();
+
 
         control1.addDevice(computer1);      // 여기서 0번 인덱스를 차지했기 때문에
         control1.addDevice(led1);
         control1.addDevice(mouse1);
 
 //        System.out.println(control1.checkEmpty());  // 결과값 : 1 -> 확인하고 checkEmpty()를 private 처리했습니다.
+        // SmartPhone, Speaker, Tv 객체를 각각 만들어서 순서대로 control1 객체의 필드인
+        // deviceArray에 집어넣으시오
+        control1.addDevice(smartPhone1);
+        control1.addDevice(speaker1);
+        control1.addDevice(tv1);
+        control1.powerOn();
+        tv1.on();
+        control1.powerOff();
+        tv1.off();
 
+        // deviceArray에 연결된 제품들의 전원을 켜도록 코드를 작성하시오.
+        //tv1의 전원을 켜도록 코드를 작성하시오
+//        tv1.on();
+
+        // deviceArray에 연결된 제품들의 전원을 끄도록 코드를 작성하시오.
+        //tv1의 전원을 끄도록 코드를 작성하시오
+//        tv1.off();
+        control1.performSpecificMethod();
+        // tv1의 경우 control의 필드에 들어가 있지 않기 때문에
+        tv1.channelUp();
+        // 따로 실행해줘야함
     }
 }
